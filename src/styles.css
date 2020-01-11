@@ -1,2 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.landing-page{
+    padding:290px;
+    /* background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTftYYfCNHQCrWtHetrLXP29OdJXTU9cWQM5nYXiIOQizyK8mHi'); */
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+}
+h1{
+    color:yellow;
+    font-weight: 800;
+    font-family: 'Rock Salt', cursive;
+    padding-top: 0vh;
+}
+.landingpagebtn{
+    display: flex;
+}
+.landingpagebtn1{
+    display: flex;
+    float: right;
+}
