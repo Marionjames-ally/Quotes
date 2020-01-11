@@ -1,9 +1,11 @@
-<div class="container">
-    <ul>
-        <div *ngFor='let quote of quotes;let i = index'>
-            <li id="{{i}}">{{quote.quote}}</li>
-
-
-        </div>
-    </ul>
-</div>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ quote.author }}</h5>
+      <p class="card-text">{{ quote.Quote }}</p>
+      <p>posted by {{ quote.name }}</p>
+    </div>
+    
+    <div class="card-body">
+      <a href="#" class="btn">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
