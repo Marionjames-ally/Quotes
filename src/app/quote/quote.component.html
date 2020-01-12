@@ -1,41 +1,25 @@
-<div id="overlay" class="landing-page">
-    <div class="h1">
-        <h1>QUOTES MANIA</h1>
+<section>
+    <div class="welcome">
+        <h1 class="text-center welcome-text">QUOTES MANIA</h1>
+        <a href="#myQuote">
+            <h5 class="btn text-center btn-outline-warning">
+                Add Quotes
+            </h5>
+        </a>
     </div>
-    <div class="landingpagebtn">
-        <div class="col-md-6">
-            <div class="overlay">
-                <button href="#" id="landingpagebtn1" class="btn btn-outline-success"
-                style="padding: 30px; border-radius: 150px;">View Quotes</button>
-
-            </div>
-            <div class="overlay">
-                <button href="#" id="landingpagebtn2" class="btn btn-outline-warning"
-                style="padding: 30px; border-radius: 150px;">Add Quote</button>
-
+    <div class="quote" *ngFor='let quote of quotes; let i= index'>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div id="{{i}}" class="card-body">
+                            <h4 class="card-title">Author:{{ quote.author }}</h4>
+                            <p class="card-text">Quote: {{ quote.Quote }}</p>
+                            <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container">
-    <div *ngFor='let quote of quotes'>
-
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">{{ quote.author }}</h5>
-                <p class="card-text">{{ quote.Quote }}</p>
-                <p>posted by {{ quote.name }}</p>
-            </div>
-
-            <div class="card-body">
-                <button (click)='upVote()' class="btn btn-outline-success"> <i class="fa fa-thumbs-up"></i><span
-                        class="badge badge-light"> {{quote.upVote}} </span></button>
-                <button (click)='downVote()' class="btn btn-outline-warning"> <i class="fa fa-thumbs-down"></i>
-                    <span class="badge badge-light"> {{quote.downVote}} </span></button>
-            </div>
-            <div class="card-body">
-                <button (click)='quoteDelete(true)' class="btn btn-outline-danger btn-sm"><i class="fa fa-trash"></i>
-                    Delete Quote</button>
-            </div>
-        </div>
-    </div>
+</section>
