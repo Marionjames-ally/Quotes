@@ -21,3 +21,15 @@ h5{
     margin-top: 100px;
     margin-left: 40%;
 }
+.quote{
+    padding: 20px;
+    display: flex;
+    float: left;
+    box-shadow: 3px 3px 10px blue;
+}
+.display{
+    padding:50px;
+}
+.confuse{
+    padding: 30px;
+}
