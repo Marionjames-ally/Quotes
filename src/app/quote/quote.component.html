@@ -8,23 +8,30 @@
         </a>
     </div>
     <div class="display">
+        <h2 class="text-center">QUOTES</h2>
         <div class="quote" *ngFor='let quote of quotes; let i= index'>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="card" style="width: 18rem; height: 16rem;">
+                        <div class="card" style="width: 48rem;">
                             <div id="{{i}}" class="card-body">
                                 <h4 class="card-title">Author:{{ quote.author }}</h4>
                                 <p class="card-text">Quote: {{ quote.Quote }}</p>
                                 <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div *ngIf='quote.showDescription' class="details">
+                                <app-quote-details style="background-color: rgba(121, 224, 224, 0.089)">
+                                </app-quote-details>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="confuse">
-            
-        </div>
     </div>
+
+
 </section>

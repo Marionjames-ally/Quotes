@@ -23,13 +23,19 @@ h5{
 }
 .quote{
     padding: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+
     display: flex;
     float: left;
     box-shadow: 3px 3px 10px blue;
 }
-.display{
-    padding:50px;
-}
-.confuse{
+
+h2{
+    color: #070c1f;
+    font-weight: 600;
+    font-family: 'Rock Salt', cursive;
     padding: 30px;
 }
