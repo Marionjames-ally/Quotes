@@ -8,6 +8,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DateAgoPipe } from './pipes/date-ago.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { DateAgoPipe } from './pipes/date-ago.pipe';
     QuoteComponent,
     QuoteDetailsComponent,
     QuoteFormComponent,
-    DateAgoPipe
+    DateAgoPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
