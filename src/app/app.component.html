@@ -1,4 +1,5 @@
-<app-quote></app-quote>
-<div class="col-md-6 m-20 ">
+<app-quote  [quotes]='quotes'></app-quote>
+
+<div class="col">
     <app-quote-form (inputQuote)="pushQuote($event)"></app-quote-form>
 </div>

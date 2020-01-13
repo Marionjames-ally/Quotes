@@ -17,14 +17,26 @@ h1{
     padding-top: 0vh;
 }
 h5{
-    color: yellow;
+    color: blue;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Rock Salt', cursive;
     margin-top: 100px;
     margin-left: 40%;
 }
+h6{
+    color: blue;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Rock Salt', cursive;
+    margin-top: 100px;
+    /* margin-left: 40%; */
+}
+
 .quote{
     padding: 20px;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 150px;
 
@@ -38,4 +50,9 @@ h2{
     font-weight: 600;
     font-family: 'Rock Salt', cursive;
     padding: 30px;
+}
+#myQuote{
+    padding: 200px;
+    padding-top: 0;
+
 }
