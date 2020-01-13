@@ -8,19 +8,16 @@
         </a>
     </div>
 
-    <ul>
-        <div *ngFor='let quote of quotes; let i = index'>
 
-            <li id="{{i}}">{{quote.Quote}}</li>
-            <p>Author: {{ quote.author }}</p>
-            <p style="text-decoration: underline;">posted on: {{quote.postDate|date|uppercase}} </p>
-            <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
-            <!--  -->
+    <div class="card" *ngFor='let quote of quotes; let i = index'>
+        <p class="card-body">Author: {{ quote.author }}</p>
+        <p class="card-text" id="{{i}}" appHighlight>{{quote.Quote}}</p>
+        <p class="card-body" style="text-decoration: underline;">posted on: {{quote.postDate|date|uppercase}} </p>
+        <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
+        <div class="card-body">
             <app-quote-details style="background-color: rgba(121, 224, 224, 0.089)" *ngIf="quote.showDescription"
                 [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-details>
         </div>
-    </ul>
-
-    
+    </div>
 
 </section>
