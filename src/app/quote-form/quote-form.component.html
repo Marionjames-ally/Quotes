@@ -6,22 +6,27 @@
     <div class="forms">
         <div class="form-group">
             <label for="name">NAME</label>
-            <input type="text" name="name" [(ngModel)]="this.newName.quote" class="form-control"
+            <input type="text" name="name" [(ngModel)]="newQuote.name" class="form-control"
                 placeholder="Enter Name" required>
+               
         </div>
         <div class="form-group">
             <label for="quote">QUOTE</label>
-            <input type="text" name="quote" [(ngModel)]="this.newQuote.quote" class="form-control"
+            <input type="text" name="quote" [(ngModel)]="newQuote.Quote" class="form-control"
                 placeholder="Enter Quote" required>
+                
         </div>
 
         <div class="form-group">
             <label for="exampleInputPassword1">AUTHOR</label>
-            <input type="text" class="form-control" name="author" id="author" placeholder="Author" required>
+            <input type="text" class="form-control" name="author" id="author" placeholder="Author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
         </div>
+        
+
+
         <div class="form-group">
             <label for="Date">Date</label>
-            <input type="Date" class="form-control" name="Date" id="Date" placeholder="Input date">
+            <input type="Date" class="form-control" name="Date" id="Date" placeholder="Input date" [(ngModel)]="newQuote.postDate" name="postDate" #postDate="ngModel" >
         </div>
     </div>
     <button class="btn btn-outline-primary" id="submit" type="submit" name="button" (click)='onSubmit'> <i

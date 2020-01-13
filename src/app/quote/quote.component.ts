@@ -11,18 +11,31 @@ import { Quote } from './../quote';
 
 export class QuoteComponent implements OnInit {
   @Input() quotes= Array<Quote>()
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+}
+  completeQuote(isComplete: any,index: number){
+    if (isComplete){
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+        this.quotes.splice(index,1);
+    }
+        }
+
+  addNewQuote(quote,index){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+      }
+
+  
     constructor() { }
 
   ngOnInit() {
   }
 
 
-  completeQuote(isComplete: any,index: number){
-    if (isComplete){
-        this.quotes.splice(index,1);
-        }
-        }
-  toggleDetails(index) {
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
-}
+  
+  
+
 }
