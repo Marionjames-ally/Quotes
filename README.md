@@ -42,4 +42,32 @@ Marion James
 
 ## Email
 
-marionjames
+marionjames2018@gmail.com
+
+## BDD
+
+- The user should be able to view quotes posted
+
+- The user should be able to  add quotes of her choice
+
+- The user should be able to upvote or downvote a quote
+
+- The user should be able to delete a quote
+
+## Technologies Used
+
+- Typescript
+
+- HTML
+
+- Boootstrap
+
+- CSS
+
+- Angular Framework
+
+- Javascript
+
+## license
+
+MIT ©MARION 2019
