@@ -1,5 +1,6 @@
 <div class="card-body" style="width: 550px; background-color: rgba(127, 255, 212, 0.349);">
     <p>Posted by: {{quote.name}}</p>
+    <p>This quote was posted {{ quote.postDate | dateAgo }} </p>
     <h4>
         <button (click)='upVote()' class="btn btn-outline-success"> <i class="fa fa-thumbs-up"></i><span
                 class="badge badge-light">{{ quote.upVote }}</span></button>

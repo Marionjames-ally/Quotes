@@ -12,7 +12,8 @@
         <div *ngFor='let quote of quotes; let i = index'>
 
             <li id="{{i}}">{{quote.Quote}}</li>
-            <p style="text-decoration: underline;">{{quote.name}} posted on: {{quote.postDate|date|uppercase}} </p>
+            <p>Author: {{ quote.author }}</p>
+            <p style="text-decoration: underline;">posted on: {{quote.postDate|date|uppercase}} </p>
             <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
             <!--  -->
             <app-quote-details style="background-color: rgba(121, 224, 224, 0.089)" *ngIf="quote.showDescription"
