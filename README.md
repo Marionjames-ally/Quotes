@@ -68,6 +68,10 @@ marionjames2018@gmail.com
 
 - Javascript
 
+## CODEBEAT Badge
+
+[![codebeat badge](https://codebeat.co/badges/b18931cf-c9cd-47d1-b491-c5c28efa9c73)](https://codebeat.co/projects/github-com-marionjames-ally-quotes-master)
+
 ## license
 
 MIT ©MARION 2019

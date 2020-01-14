@@ -1,3 +1,13 @@
+/angular.json
+/browserlist
+/karma.conf.json
+/package-lock.json 
+/package.json
+/tsconfig.app.json
+/tsconfig.spec.json
+/tslint.json
+/.editorconfig
+
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
